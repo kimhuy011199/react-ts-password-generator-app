@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-black1 font-mono text-gray1;
+  }
+}
+
+@layer components {
+  .inputRange {
+    @apply h-1 appearance-none bg-black2 bg-gradient-to-r from-green to-green bg-[length:50%_100%] bg-no-repeat;
+  }
+  .inputRange::-webkit-slider-thumb {
+    @apply h-4 w-4 cursor-pointer appearance-none rounded-full bg-white;
+  }
+  .inputRange::-moz-range-thumb {
+    @apply h-4 w-4 cursor-pointer appearance-none rounded-full bg-white;
+  }
+  .inputRange::-ms-thumb {
+    @apply h-4 w-4 cursor-pointer appearance-none rounded-full bg-white;
+  }
+}
